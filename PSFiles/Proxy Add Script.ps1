@@ -1,0 +1,1 @@
+﻿Import-Csv "C:\Powershell Scripts\users.csv" | foreach {Set-ADUser -Identity $_.UserPrincipalName -Add @{Proxyaddresses=$_.Proxyaddresses}}
