@@ -1,0 +1,1 @@
+﻿import-csv C:\Temp\Oncall.csv | Foreach-Object {Remove-TeamUser -GroupId $_.GroupId -User $_.upn
