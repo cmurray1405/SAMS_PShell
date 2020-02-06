@@ -1,1 +1,1 @@
-﻿Import-Csv -Path "C:\Temp\PSP.csv" | ForEach-Object {Add-TeamUser -GroupId $_.groupid -User $_.upn}
+﻿Import-Csv -Path "C:\Temp\AddtoTeams.csv" | ForEach-Object {Add-TeamUser -GroupId $_.groupid -User $_.upn}
