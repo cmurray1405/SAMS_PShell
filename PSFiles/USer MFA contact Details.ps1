@@ -1,1 +1,1 @@
-﻿Get-MsolUser -All | Select DisplayName -ExpandProperty StrongAuthenticationUserDetails | ft DisplayName, PhoneNumber
+﻿Get-MsolUser -All | Select-Object DisplayName -ExpandProperty StrongAuthenticationUserDetails | Format-Table DisplayName, PhoneNumber

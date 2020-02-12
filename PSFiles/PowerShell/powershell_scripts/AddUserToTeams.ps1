@@ -1,0 +1,1 @@
+﻿import-csv -Path "C:\powershell_scripts\ListOfTeams.csv" | Foreach-Object {Add-TeamUser -GroupId $_.groupid -User admin@samaritansfoundation.onmicrosoft.com }

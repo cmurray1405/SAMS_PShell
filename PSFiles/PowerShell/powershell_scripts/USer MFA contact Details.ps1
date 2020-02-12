@@ -1,0 +1,1 @@
+﻿Get-MsolUser -All | Select DisplayName -ExpandProperty StrongAuthenticationUserDetails | ft DisplayName, PhoneNumber 
