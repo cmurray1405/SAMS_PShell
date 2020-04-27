@@ -1,1 +1,1 @@
-﻿Import-Csv -Path "C:\Temp\AddtoTeams.csv" | ForEach-Object {Add-TeamUser -GroupId $_.groupid -User $_.upn}
+﻿Import-Csv -Path "J:\Users\Craig\Documents\GitHub\SAMS_PShell\CSV\AddtoTeams.csv" | ForEach-Object {Add-TeamUser -GroupId $_.groupid -User $_.upn}
