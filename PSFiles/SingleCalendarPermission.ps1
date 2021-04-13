@@ -1,8 +1,12 @@
+#Admin Login
+$admin = Read-Host -Prompt "Enter Admin Email"
+Connect-ExchangeOnline -UserPrincipalName $admin
+
 #Specify Calendar
-$calendar = Read-Host -Prompt "Please enter users calendar"
+$calendar = Read-Host -Prompt "Please enter alias for calendar"
 
 #Specify User
-$user = Read-Host -Prompt "Enter User name"
+$user = Read-Host -Prompt "Enter emial for person who needs access"
 
 #Access Rights
 $access = Read-Host -Prompt "what access rights are needed"
